@@ -1,0 +1,288 @@
+body{
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offcanvas-body{
+
+    background-color: #FF0000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.offcanvas-header{
+    background-color: #FF0000;
+    color: white;
+}
+.offcanvas-body a{
+    background-color: white;
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.offcanvas-body button{
+    border: none;
+    width: 266px;
+    height: 37px;
+    border-radius: 10px;
+    
+}
+button .btn-close{
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar button{
+    width: 160px;
+    height: 43px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 14px;
+}
+button span{
+    font-size: 10px;
+    text-align: start;
+}
+.nav2 .bx{
+    color: #FF0000;
+    font-size: 30px;
+    
+}
+.cart{
+    width: 40px;
+    height: 40px;
+}
+.nav1 {
+    display: flex;
+    flex-direction: row;
+}
+.nav1 p .bx{
+    color: #FF0000;
+    font-size: 25px;
+}
+.nav1 p{
+    font-weight: bold;
+}
+.nav2 button{
+    width: 200px;
+}
+.banner img{
+    /* width: 90%;
+    height: auto;
+   margin-left: 20px;
+   margin-right: 20px; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;
+   border-radius: 30px;
+}
+.deal{
+    width: 100px;
+    height: 140px;
+    text-align: center;
+   
+}
+.deal img{
+    width: 100px;
+    height: 100px;
+}
+.deal-main{
+     display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+.add{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.add button{
+
+    border: none;
+    background-color: #FF0000;
+    color: aliceblue;
+    width: 60px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.card{
+    margin-top: 30px;
+}
+.cardmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card h4{
+    font-weight: bolder;
+}
+.refinding{
+    
+    margin: 80px;
+}
+
+
+/* submit page */
+
+.top-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 20px 40px;
+    }
+
+    .top-section img {
+      border-radius: 12px;
+      width: 95%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    /* Bottom section */
+    .bottom-section {
+      padding: 30px 50px;
+    }
+
+    .bottom-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .brand-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+    }
+
+    .brand-options button {
+        height: 70px;
+        width: 200px;
+      padding: 12px 18px;
+      font-size: 16px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+
+    /* DISCOUNT PAGE */
+    .discountpage {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav1, .nav2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav1 button, 
+  .nav2 button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .deal-main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cardmain {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .refinding {
+    margin: 30px;
+  }
+
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-section img {
+    width: 100%;
+    max-height: 250px;
+  }
+
+  .brand-options {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center;
+  }
+
+  .brand-options button {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+/* For mobiles */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav1 p {
+    font-size: 14px;
+  }
+
+  .nav1 .bx, .nav2 .bx {
+    font-size: 22px;
+  }
+
+  .banner img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .deal {
+    width: 80px;
+    height: auto;
+  }
+
+  .deal img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+
+  .brand-options {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-options button {
+    width: 90%;
+    height: auto;
+    padding: 14px;
+  }
+}
